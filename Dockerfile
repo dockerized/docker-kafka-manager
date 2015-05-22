@@ -1,6 +1,6 @@
 FROM xiocode/scala-sbt:latest
 
-MAINTAINER Clement Laforet <sheepkiller@cultdeadsheep.org>
+MAINTAINER Tony Shao <xiocode@gmail.com>
 
 ENV ZK_HOSTS=localhost:2181 \
      KM_REVISION=a4495bf94b439b822039a2a6daa3194ee6fcbd7c \
