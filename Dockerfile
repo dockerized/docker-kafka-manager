@@ -3,8 +3,8 @@ FROM xiocode/scala-sbt:latest
 MAINTAINER Tony Shao <xiocode@gmail.com>
 
 ENV ZK_HOSTS=localhost:2181 \
-     KM_REVISION=44926597301f6052d2b3e302de643d2b4817c95f \
-     KM_VERSION=1.2.9.10
+     KM_REVISION=1b45af100ee302dfe53f31a9c7a041999fe3d83a \
+     KM_VERSION=1.3.0.4
 
 RUN cd / && \
     git clone https://github.com/yahoo/kafka-manager && \
