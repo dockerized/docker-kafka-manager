@@ -7,7 +7,7 @@ ENV ZK_HOSTS=localhost:2181 \
 
 RUN cd / && \
     curl -OL https://github.com/yahoo/kafka-manager/archive/${KM_VERSION}.zip && \
-    unzip -d /tmp ${KM_VERSION}.zip
+    unzip -d /tmp ${KM_VERSION}.zip && \
     cd /tmp/kafka-manager-${KM_VERSION} && \
     sbt clean dist && \
     unzip  -d / ./target/universal/kafka-manager-${KM_VERSION}.zip
